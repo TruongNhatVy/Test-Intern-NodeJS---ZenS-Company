@@ -38,6 +38,35 @@ export const quickSort = (arr) => {
 
   return [...quickSort(left), pivot, ...quickSort(right)];
 };
-export const clearValueInput = (id) =>{
-    document.getElementById(id).value = '';
-}
+export const clearValueInput = (id) => {
+  document.getElementById(id).value = "";
+};
+export const lengthOfArray = (arr) => {
+  return arr.length;
+};
+export const minValueOfArray = (arr) => {
+  return quickSort(arr)[0];
+};
+export const maxValueOfArray = (arr) => {
+  return quickSort(arr)[arr.length - 1];
+};
+export const evenValuesInArr = (arr) => {
+  const result = [];
+
+  arr.forEach((element) => {
+    if (element % 2 == 0) {
+      result.push(element);
+    }
+  });
+
+  return result;
+};
+export const oddValuesInArray = (arr) => {
+  const result = [];
+
+  arr.forEach((element) => {
+    if (element % 2 != 0) result.push(element);
+  });
+
+  return result;
+};

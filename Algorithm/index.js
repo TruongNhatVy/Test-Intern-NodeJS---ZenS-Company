@@ -49,5 +49,5 @@ export const miniMaxSum = (arr) => {
   document.getElementById("result").value = minimum + " " + maximum;
 };
 
+//khai báo biến toàn cục để sử dụng cho hàm onlick của button
 window.validateInput = validateInput;
-window.miniMaxSum = miniMaxSum;
